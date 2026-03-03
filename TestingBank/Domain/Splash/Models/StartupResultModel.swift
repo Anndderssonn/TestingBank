@@ -9,7 +9,7 @@ import Foundation
 
 enum StartupResultModel {
     case readyForHome
-    case requiresLogin
+    case readyForGuest
     case requiresOnBoarding
     case blocked(BlockReasonModel)
 }

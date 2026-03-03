@@ -16,16 +16,16 @@ struct SessionValidator: StartupValidatorProtocol {
     
     func validate() async -> ValidationResultModel {
         guard let state = try? await repository.fetchCurrentSession() else {
-            return .failed(.requiresLogin)
+            return .failed(.readyForGuest)
         }
         
         switch state {
         case .active:
             return .passed
         case .expired:
-            return .failed(.requiresLogin)
+            return .failed(.readyForGuest)
         case .notFound:
-            return .failed(.requiresLogin)
+            return .failed(.readyForGuest)
         }
     }
 }
