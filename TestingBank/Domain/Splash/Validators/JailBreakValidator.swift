@@ -9,6 +9,9 @@ import Foundation
 
 struct JailBreakValidator: StartupValidatorProtocol {
     func validate() async -> ValidationResultModel {
+#if targetEnvironment(simulator)
+        return .passed
+#else
         let paths = [
             "/Applications/Cydia.app",
             "/usr/sbin/sshd",
@@ -16,5 +19,6 @@ struct JailBreakValidator: StartupValidatorProtocol {
         ]
         let isJailBroken = paths.contains { FileManager.default.fileExists(atPath: $0) }
         return isJailBroken ? .failed(.blocked(.jailBreak)) : .passed
+#endif
     }
 }

@@ -8,8 +8,8 @@
 import Foundation
 
 struct SplashErrorMapper {
-    static func toDomain(_ error: Error) -> SplashDomainError {
-        if let domainError = error as? SplashDomainError {
+    static func toDomain(_ error: Error) -> SplashDomainErrorModel {
+        if let domainError = error as? SplashDomainErrorModel {
             return domainError
         }
         if let urlError = error as? URLError {
