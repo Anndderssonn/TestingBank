@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum ValidationResultModel {
+enum ValidationResultModel: Equatable {
     case passed
     case failed(StartupResultModel)
 }

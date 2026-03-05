@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum BlockReasonModel {
+enum BlockReasonModel: Equatable {
     case jailBreak
     case updateRequired
     case maintenanceMode

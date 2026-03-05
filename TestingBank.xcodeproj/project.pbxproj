@@ -6,7 +6,18 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		638769932F590D080033A097 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63BDF0352F5506E10018AAE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63BDF03C2F5506E10018AAE5;
+			remoteInfo = TestingBank;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		6387698F2F590D080033A097 /* TestingBankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestingBankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63BDF03D2F5506E10018AAE5 /* TestingBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestingBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -21,6 +32,11 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		638769902F590D080033A097 /* TestingBankTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = TestingBankTests;
+			sourceTree = "<group>";
+		};
 		63BDF03F2F5506E10018AAE5 /* TestingBank */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -32,6 +48,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6387698C2F590D080033A097 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		63BDF03A2F5506E10018AAE5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -46,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				63BDF03F2F5506E10018AAE5 /* TestingBank */,
+				638769902F590D080033A097 /* TestingBankTests */,
 				63BDF03E2F5506E10018AAE5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				63BDF03D2F5506E10018AAE5 /* TestingBank.app */,
+				6387698F2F590D080033A097 /* TestingBankTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,6 +86,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6387698E2F590D080033A097 /* TestingBankTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 638769972F590D080033A097 /* Build configuration list for PBXNativeTarget "TestingBankTests" */;
+			buildPhases = (
+				6387698B2F590D080033A097 /* Sources */,
+				6387698C2F590D080033A097 /* Frameworks */,
+				6387698D2F590D080033A097 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				638769942F590D080033A097 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				638769902F590D080033A097 /* TestingBankTests */,
+			);
+			name = TestingBankTests;
+			packageProductDependencies = (
+			);
+			productName = TestingBankTests;
+			productReference = 6387698F2F590D080033A097 /* TestingBankTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		63BDF03C2F5506E10018AAE5 /* TestingBank */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63BDF0502F5506E20018AAE5 /* Build configuration list for PBXNativeTarget "TestingBank" */;
@@ -93,6 +141,10 @@
 				LastSwiftUpdateCheck = 2630;
 				LastUpgradeCheck = 2630;
 				TargetAttributes = {
+					6387698E2F590D080033A097 = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = 63BDF03C2F5506E10018AAE5;
+					};
 					63BDF03C2F5506E10018AAE5 = {
 						CreatedOnToolsVersion = 26.3;
 					};
@@ -113,11 +165,19 @@
 			projectRoot = "";
 			targets = (
 				63BDF03C2F5506E10018AAE5 /* TestingBank */,
+				6387698E2F590D080033A097 /* TestingBankTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6387698D2F590D080033A097 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		63BDF03B2F5506E10018AAE5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -128,6 +188,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6387698B2F590D080033A097 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		63BDF0392F5506E10018AAE5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -137,7 +204,57 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		638769942F590D080033A097 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63BDF03C2F5506E10018AAE5 /* TestingBank */;
+			targetProxy = 638769932F590D080033A097 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		638769952F590D080033A097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GD2L29SNJU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.faketrue.TestingBankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestingBank.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestingBank";
+			};
+			name = Debug;
+		};
+		638769962F590D080033A097 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GD2L29SNJU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.faketrue.TestingBankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestingBank.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestingBank";
+			};
+			name = Release;
+		};
 		63BDF0512F5506E20018AAE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -324,6 +441,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		638769972F590D080033A097 /* Build configuration list for PBXNativeTarget "TestingBankTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				638769952F590D080033A097 /* Debug */,
+				638769962F590D080033A097 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		63BDF0382F5506E10018AAE5 /* Build configuration list for PBXProject "TestingBank" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

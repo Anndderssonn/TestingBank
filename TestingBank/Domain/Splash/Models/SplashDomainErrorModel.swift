@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum SplashDomainErrorModel: Error {
+enum SplashDomainErrorModel: Error, Equatable {
     case networkUnavailable
     case unknown
 }

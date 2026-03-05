@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct RemoteConfigModel {
+struct RemoteConfigModel: Equatable {
     let minimumAppVersion: String
     let isMaintenanceModeActive: Bool
     let currentAppVersion: String

@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum StartupResultModel {
+enum StartupResultModel: Equatable {
     case readyForHome
     case readyForGuest
     case requiresOnBoarding
