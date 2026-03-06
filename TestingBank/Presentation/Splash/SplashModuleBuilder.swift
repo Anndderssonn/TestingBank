@@ -15,7 +15,7 @@ enum SplashModuleBuilder {
         let remoteConfigValidator = RemoteConfigValidator(repository: remoteConfigRepository)
         let sessionValidator = SessionValidator(repository: sessionRepository)
         let onBoardingValidator = OnboardingValidator(
-            hasCompleteOnboarding: UserDefaults.standard.bool(forKey: "hasCompletedOnboarding")
+            hasCompletedOnboarding: UserDefaults.standard.bool(forKey: "hasCompletedOnboarding")
         )
         let facade = AppStartupFacade(validators: [
             jailBreakValidator,

@@ -21,7 +21,7 @@ final class RemoteConfigValidatorTests: XCTestCase {
     
     override func tearDown() {
         mockRepository = nil
-        sut            = nil
+        sut = nil
         super.tearDown()
     }
     

@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct USRemoteConfigDataSource {
-    private let client: NetworkClient
+struct USRemoteConfigDataSource: RemoteConfigDataSourceProtocol {
+    private let client: NetworkClientProtocol
     
-    init(client: NetworkClient) {
+    init(client: NetworkClientProtocol) {
         self.client = client
     }
     

@@ -8,9 +8,9 @@
 import Foundation
 
 struct USSessionRepositoryImpl: SessionRepositoryProtocol {
-    private let keychainDataSource: KeychainDataSource
+    private let keychainDataSource: KeychainDataSourceProtocol
     
-    init(keychainDataSource: KeychainDataSource) {
+    init(keychainDataSource: KeychainDataSourceProtocol) {
         self.keychainDataSource = keychainDataSource
     }
     

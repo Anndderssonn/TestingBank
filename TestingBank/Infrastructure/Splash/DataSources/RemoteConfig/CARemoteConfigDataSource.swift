@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct CARemoteConfigDataSource {
-    private let client: NetworkClient
+struct CARemoteConfigDataSource: RemoteConfigDataSourceProtocol {
+    private let client: NetworkClientProtocol
     
-    init(client: NetworkClient) {
+    init(client: NetworkClientProtocol) {
         self.client = client
     }
     

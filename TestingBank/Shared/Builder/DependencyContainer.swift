@@ -10,7 +10,7 @@ import Foundation
 final class DependencyContainer {
     static let shared = DependencyContainer()
     var activeCountry: CountryCode = .US
-    private lazy var networkClient: NetworkClient = {
+    private lazy var networkClient: NetworkClientProtocol = {
         URLSessionNetworkClient()
     }()
     

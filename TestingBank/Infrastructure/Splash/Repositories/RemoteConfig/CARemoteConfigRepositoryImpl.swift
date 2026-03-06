@@ -8,9 +8,9 @@
 import Foundation
 
 struct CARemoteConfigRepositoryImpl: RemoteConfigRepositoryProtocol {
-    private let dataSource: CARemoteConfigDataSource
+    private let dataSource: RemoteConfigDataSourceProtocol
     
-    init(dataSource: CARemoteConfigDataSource) {
+    init(dataSource: RemoteConfigDataSourceProtocol) {
         self.dataSource = dataSource
     }
     

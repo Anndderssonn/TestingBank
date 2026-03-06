@@ -7,11 +7,12 @@
 
 import Foundation
 
-struct KeychainDataSource {
+struct KeychainDataSource: KeychainDataSourceProtocol {
     private let tokenKey = "com.testingbank.authToken"
     
     func saveToken(_ token: String) {
-        guard let data = token.data(using: .utf8) else { return }
+        guard !token.isEmpty,
+              let data = token.data(using: .utf8) else { return }
         deleteToken()
         let query: [String: Any] = [
             kSecClass as String: kSecClassGenericPassword,

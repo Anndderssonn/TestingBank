@@ -8,13 +8,13 @@
 import Foundation
 
 struct OnboardingValidator: StartupValidatorProtocol {
-    private let hasCompleteOnboarding: Bool
+    private let hasCompletedOnboarding: Bool
     
-    init(hasCompleteOnboarding: Bool) {
-        self.hasCompleteOnboarding = hasCompleteOnboarding
+    init(hasCompletedOnboarding: Bool) {
+        self.hasCompletedOnboarding = hasCompletedOnboarding
     }
     
     func validate() async -> ValidationResultModel {
-        return hasCompleteOnboarding ? .passed : .failed(.requiresOnBoarding)
+        return hasCompletedOnboarding ? .passed : .failed(.requiresOnBoarding)
     }
 }

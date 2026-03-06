@@ -8,9 +8,9 @@
 import Foundation
 
 struct CASplashRepositoryFactoryImpl: SplashRepositoryFactoryProtocol {
-    private let networkClient: NetworkClient
+    private let networkClient: NetworkClientProtocol
     
-    init(networkClient: NetworkClient) {
+    init(networkClient: NetworkClientProtocol) {
         self.networkClient = networkClient
     }
     
