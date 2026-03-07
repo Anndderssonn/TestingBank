@@ -19,10 +19,14 @@ class SplashInteractor {
 extension SplashInteractor: SplashInteractorDelegate {
     func startUp() {
         Task {
-            let result = await facade.startUp()
-            await MainActor.run {
-                presenter?.startUpCompleted(result: result)
-            }
+            await performStartUp()
+        }
+    }
+    
+    func performStartUp() async {
+        let result = await facade.startUp()
+        await MainActor.run {
+            presenter?.startUpCompleted(result: result)
         }
     }
 }
